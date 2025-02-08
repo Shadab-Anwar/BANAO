@@ -2,30 +2,30 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaGoogle, FaFacebook, FaEye, FaEyeSlash, FaLock } from "react-icons/fa";
 
-const Hero = () => {
+const AuthSection = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
   return (
 
-    <div className="container-fluid vh-100 d-flex align-items-center justify-content-center auth-section" style={{ backgroundColor: "#F8F6FC"}}>
+    <div className="container-fluid min-height: 100vh d-flex align-items-center justify-content-center auth-section" style={{ backgroundColor: "#F8F6FC"}}>
       <div className="row w-100 p-5">
-    
-        <div className="col-lg-6 d-flex flex-column justify-content-between" style={{ marginBottom: "-20px" }}>
+        {/* Left Side */}
+        <div className="col-lg-6 d-flex flex-column justify-content-between order-1 custom-section" style={{ marginBottom: "-48px" }}>
           <h1 className="fw-bold">
             <i>
             Explore your <span className="text-primary">hobby</span> or <span className="text-secondary">passion</span>
             </i>
           </h1>
-          <p className="text-muted">
+          <p className="text-muted" style={{ paddingBottom: "300px"}}>
           Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers, suppliers, classes, workshops, and places to practice, participate or perform. Your hobby may be about visual or performing arts, sports, games, gardening, model making, cooking, indoor or outdoor activities…
           <p className="mt-3">If you are an expert or a seller, you can Add your Listing and promote yourself, your students, products,  services or events.  Hop on your hobbyhorse and enjoy the ride.</p>
           </p>
-          <img src="https://res.cloudinary.com/duwddcqzi/image/upload/v1738941337/Group_27_kjlwr0.png" alt="Hobby Illustration" className="img-fluid" />
         </div>
+        <div className="img col-lg-6 d-flex flex-column justify-content-between order-3 adjust" style={{ marginTop: "-160px" }}><img src="https://res.cloudinary.com/duwddcqzi/image/upload/v1738941337/Group_27_kjlwr0.png" alt="Hobby Illustration" className="img-fluid" /></div>
 
-      
-        <div className="col-lg-6 d-flex flex-column justify-content-center p-5 rounded">
+        {/* Right Side - Auth Section */}
+        <div className="col-lg-6 d-flex flex-column justify-content-center p-5 rounded mt-2 order-2 second">
           <div className="p-5">
           <div className="d-flex Switch">
             <h4 className={isSignUp ? "text-muted" : "fw-bold border-bottom border-3 pb-1 px-4"} onClick={() => setIsSignUp(false)}>Sign In</h4>
@@ -77,18 +77,17 @@ const Hero = () => {
 <style>
 {`
 @media (max-width: 995px) {
-  .auth-section{
-    padding-top: 520px;
-    padding-bottom: 540px;
+
+  .custom-section {
+    margin-bottom: -350px !important;
   }
-  .auth-section .Switch{
-  display: flex;
+  .adjust {
+    margin-top: 10px !important   
   }
   .auth-section .row {
-    flex-direction: column-reverse !important;
+    flex-direction: column !important;
     text-align: center !important;
   }
-
   .auth-section .col-lg-6 {
     width: 100% !important;
   }
@@ -159,5 +158,5 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default AuthSection;
 
