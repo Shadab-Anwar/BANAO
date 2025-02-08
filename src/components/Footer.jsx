@@ -7,7 +7,6 @@ const Footer = () => {
     <footer className="footer pt-5 text-dark">
       <div className="container">
         <div className="row">
-          {/* Hobbycue Section */}
           <div className="col-md-3">
             <h6 className="fw-bold fs-5 mb-3">Hobbycue</h6>
             <ul className="list-unstyled">
@@ -18,8 +17,6 @@ const Footer = () => {
               <li className="mb-2"><a href="#" className="text-dark text-decoration-none small">Contact Us</a></li>
             </ul>
           </div>
-
-          {/* How Do I Section */}
           <div className="col-md-3">
             <h6 className="fw-bold fs-5 mb-3">How Do I</h6>
             <ul className="list-unstyled">
@@ -31,8 +28,6 @@ const Footer = () => {
               <li className="mb-2"><a href="#" className="text-dark text-decoration-none small">Other Queries</a></li>
             </ul>
           </div>
-
-          {/* Quick Links Section */}
           <div className="col-md-3">
             <h6 className="fw-bold fs-5 mb-3">Quick Links</h6>
             <ul className="list-unstyled">
@@ -42,8 +37,6 @@ const Footer = () => {
               <li className="mb-2"><a href="#" className="text-dark text-decoration-none small">Community</a></li>
             </ul>
           </div>
-
-          {/* Social Media & Invite Section */}
           <div className="col-md-3">
             <h6 className="fw-bold fs-5 mb-3">Social Media</h6>
             <div className="d-flex social-icons">
@@ -56,22 +49,17 @@ const Footer = () => {
               <a href="#" className="fs-5 text-secondary me-3"><FaTelegram /></a>
               <a href="#" className="fs-5 text-secondary me-3"><FaEnvelope /></a>
             </div>
-
             <h6 className="fw-bold mt-4 fs-5 mb-3">Invite Friends</h6>
             <div className="d-flex">
               <input type="email" className="form-control invite-input" placeholder="Email ID" />
-              <button className="btn invite-btn">Invite</button>
+              <button className="btn invite-btn text-white px-3 py-2 border-0 rounded-end" style={{backgroundColor:"#9368b7"}}>Invite</button>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Copyright */}
-      <div className="text-center py-3 copyright">
+      <div className="text-center py-3 copyright text-dark small bg-light p-2">
         © Purple Cues Private Limited
       </div>
-
-      {/* Custom Styles */}
       <style>
         {`
           .social-icons a:hover {
@@ -82,20 +70,8 @@ const Footer = () => {
             border-radius: 5px 0 0 5px;
             padding: 8px;
           }
-          .invite-btn {
-            background-color: #9368b7;
-            color: white;
-            border: none;
-            border-radius: 0 5px 5px 0;
-            padding: 8px 15px;
-          }
           .invite-btn:hover {
             background-color: #7d56a1;
-          }
-          .copyright {
-            font-size: 14px;
-            color: #333;
-            background: #f8f6fb;
           }
         `}
       </style>

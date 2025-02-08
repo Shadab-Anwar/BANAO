@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card, Container, Row, Col, Button } from "react-bootstrap";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import { FaUsers, FaMapMarkerAlt, FaShoppingBag, FaCalendarCheck } from "react-icons/fa";
 
 
@@ -56,7 +56,6 @@ const features = [
     </Container>
     <style>
         {`
-    /* Default Card Styling */
     .feature-card {
     background-color: white;
     border: 2px solid transparent;
@@ -65,26 +64,22 @@ const features = [
     transition: all 0.3s ease-in-out;
     }
     
-    /* Icon Styling */
     .feature-icon {
     font-size: 24px;
     transition: color 0.3s ease-in-out;
     }
     
-    /* Hover Effects */
     .feature-card:hover {
     color: white;
 
     }
     
-    /* Title & Description Hover Effect */
     .feature-card:hover .feature-title,
     .feature-card:hover .feature-description,
     .feature-card:hover .feature-icon {
     color: white;
     }
     
-    /* Individual Border & Hover Background Colors */
     .border-purple { border-color: #7E57C2; }
     .border-green { border-color: #8BC34A; }
     .border-red { border-color: #E57373; }

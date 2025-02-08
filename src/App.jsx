@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TestimonialCard from './components/Testimonials';
 import End from './components/End';
 import Footer from './components/Footer';
+import ScrollToTop from './components/GoToTop';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <TestimonialCard/>
       <End/>
       <Footer/>
+      <ScrollToTop/>
     </>
   )
 }
