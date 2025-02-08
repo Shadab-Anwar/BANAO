@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const ScrollToTop = () => {
+const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -51,4 +51,4 @@ const ScrollToTop = () => {
   );
 };
 
-export default ScrollToTop;
+export default GoToTop;

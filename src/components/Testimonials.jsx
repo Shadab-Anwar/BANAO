@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Button, ProgressBar } from "react-bootstrap";
 import { FaQuoteLeft, FaPlay } from "react-icons/fa";
 
-const TestimonialCard = () => {
+const Testimonials = () => {
   return (
     <div className="container py-5">
       <Card className="border-0 shadow-sm rounded-3 p-4" style={{ backgroundColor: "#F8F6FC" }}>
@@ -50,4 +50,4 @@ const TestimonialCard = () => {
   );
 };
 
-export default TestimonialCard;
+export default Testimonials;

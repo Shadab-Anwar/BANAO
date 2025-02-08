@@ -4,10 +4,10 @@ import FeatureCards from './components/FeatureCards';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TestimonialCard from './components/Testimonials';
 import End from './components/End';
 import Footer from './components/Footer';
-import ScrollToTop from './components/GoToTop';
+import Testimonials from './components/Testimonials';
+import GoToTop from './components/GoToTop';
 
 
 function App() {
@@ -18,10 +18,10 @@ function App() {
       <Hero/>
       <FeatureCards/>
       <AddYourOwn/>
-      <TestimonialCard/>
+      <Testimonials/>
       <End/>
       <Footer/>
-      <ScrollToTop/>
+      <GoToTop/>
     </>
   )
 }

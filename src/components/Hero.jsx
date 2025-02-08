@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaGoogle, FaFacebook, FaEye, FaEyeSlash, FaLock } from "react-icons/fa";
 
-const AuthSection = () => {
+const Hero = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -159,5 +159,5 @@ const AuthSection = () => {
   );
 };
 
-export default AuthSection;
+export default Hero;
 
